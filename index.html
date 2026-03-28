@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirPods Pro | Som que você sente. Silêncio que você controla.</title>
+  <meta name="description" content="AirPods Pro — cancelamento de ruído 2x mais potente, áudio espacial personalizado e 30 horas de bateria. Descubra o que tem dentro do som perfeito.">
+  <meta property="og:title" content="AirPods Pro | Engenharia Invisível. Experiência Imersiva.">
+  <meta property="og:description" content="Cancelamento de ruído 2x mais potente. Áudio espacial. 30h de bateria. Descubra por dentro.">
+  <meta property="og:type" content="product">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ STICKY HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+      </a>
+      <nav class="header__nav">
+        <span class="header__product-name">AirPods Pro</span>
+      </nav>
+      <a href="#comprar" class="header__cta">
+        Comprar <span class="header__price">R$ 2.399</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title-line">Som que você sente.</span>
+        <span class="hero__title-line">Silêncio que você controla.</span>
+      </h1>
+      <p class="hero__subtitle">Engenharia invisível. Experiência imersiva.<br>Descubra o que tem dentro do som perfeito.</p>
+      <a href="#comprar" class="btn btn--primary hero__cta">Comprar Agora</a>
+      <p class="hero__proof">★★★★★ Mais de 50 milhões vendidos no mundo</p>
+    </div>
+    <div class="hero__image">
+      <img src="images/airpods-hero.png" alt="AirPods Pro flutuando com iluminação dramática" width="600" height="600" fetchpriority="high">
+    </div>
+    <div class="hero__scroll-indicator" id="scrollIndicator">
+      <span>Role para explorar</span>
+      <div class="hero__scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCROLL ANIMATION SECTION ============ -->
+  <section class="exploded" id="exploded">
+    <div class="exploded__sticky">
+      <div class="exploded__visual">
+        <div class="exploded__product">
+          <img src="images/airpods-exploded.png" alt="Vista explodida do AirPods Pro mostrando componentes internos" class="exploded__image" width="500" height="700" loading="lazy">
+        </div>
+      </div>
+      <!-- Overlay layers positioned relative to viewport, NOT the constrained visual container -->
+      <div class="exploded__layer exploded__layer--shell" data-layer="0">
+        <div class="exploded__layer-content exploded__layer-content--right">
+          <span class="exploded__layer-label">Carcaça</span>
+          <h3 class="exploded__layer-title">Projetado para desaparecer no ouvido.</h3>
+          <p class="exploded__layer-text">Feito para durar na memória.</p>
+        </div>
+      </div>
+      <div class="exploded__layer exploded__layer--chip" data-layer="1">
+        <div class="exploded__layer-content exploded__layer-content--left">
+          <span class="exploded__layer-label">Chip H2</span>
+          <h3 class="exploded__layer-title">10 bilhões de operações por segundo.</h3>
+          <p class="exploded__layer-text">Para que você ouça cada detalhe que a música esconde.</p>
+        </div>
+      </div>
+      <div class="exploded__layer exploded__layer--driver" data-layer="2">
+        <div class="exploded__layer-content exploded__layer-content--right">
+          <span class="exploded__layer-label">Driver de Áudio</span>
+          <h3 class="exploded__layer-title">Graves profundos. Agudos cristalinos.</h3>
+          <p class="exploded__layer-text">Cada frequência no lugar certo.</p>
+        </div>
+      </div>
+      <div class="exploded__layer exploded__layer--battery" data-layer="3">
+        <div class="exploded__layer-content exploded__layer-content--left">
+          <span class="exploded__layer-label">Bateria</span>
+          <h3 class="exploded__layer-title">30 horas com o case.</h3>
+          <p class="exploded__layer-text">Um fim de semana inteiro sem recarregar.</p>
+        </div>
+      </div>
+      <!-- Scroll progress bar -->
+      <div class="exploded__progress">
+        <div class="exploded__progress-bar" id="explodedProgress"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES BENTO GRID ============ -->
+  <section class="features" id="features">
+    <div class="features__container">
+      <h2 class="section-title reveal">Projetado para impressionar.</h2>
+      <div class="features__grid reveal-stagger">
+        <div class="feature-card feature-card--large reveal">
+          <div class="feature-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 18l12 12M30 18L18 30" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+            </svg>
+          </div>
+          <span class="feature-card__label">Cancelamento de Ruído Ativo</span>
+          <h3 class="feature-card__title">Silêncio sob demanda.</h3>
+          <p class="feature-card__text">2x mais potente que a geração anterior. Bloqueia o avião, o escritório e a rua. Sobra só a sua playlist.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+            </svg>
+          </div>
+          <span class="feature-card__label">Áudio Espacial Personalizado</span>
+          <h3 class="feature-card__title">Som em 3D. Calibrado para você.</h3>
+          <p class="feature-card__text">Rastreia o movimento da sua cabeça. A música se move ao redor de você.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M24 8v32M16 14c0 0 4-2 8-2s8 2 8 2M14 20c0 0 5-3 10-3s10 3 10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="feature-card__label">Modo Transparência</span>
+          <h3 class="feature-card__title">Ouça o mundo quando quiser.</h3>
+          <p class="feature-card__text">Um toque para ouvir o que está ao redor. Outro para voltar ao seu universo.</p>
+        </div>
+        <div class="feature-card feature-card--wide reveal">
+          <div class="feature-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M12 36c0-8 5-12 12-12s12 4 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 30l-2 6M30 30l2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="feature-card__label">Resistência IP54</span>
+          <h3 class="feature-card__title">Suor, chuva, treino pesado.</h3>
+          <p class="feature-card__text">Feito para quem não para. Resistente à poeira e à água.</p>
+        </div>
+      </div>
+      <div class="features__cta reveal">
+        <a href="#comprar" class="btn btn--primary">Quero Experimentar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL PROOF ============ -->
+  <section class="social-proof" id="reviews">
+    <div class="social-proof__container">
+      <span class="social-proof__badge reveal">Escolha dos especialistas</span>
+      <div class="social-proof__grid reveal-stagger">
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__quote">"O melhor cancelamento de ruído que já testei em um fone intra-auricular."</p>
+          <div class="review-card__source">
+            <span class="review-card__name">The Verge</span>
+            <span class="review-card__role">Análise Técnica</span>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__quote">"Qualidade de áudio que rivaliza com fones over-ear de US$500."</p>
+          <div class="review-card__source">
+            <span class="review-card__name">MKBHD</span>
+            <span class="review-card__role">YouTube Tech</span>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__quote">"Uso 10 horas por dia. Conforto impecável. Não consigo trabalhar sem."</p>
+          <div class="review-card__source">
+            <span class="review-card__name">Marques T.</span>
+            <span class="review-card__role">Designer de Produto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" id="comprar">
+    <div class="final-cta__container">
+      <h2 class="final-cta__title reveal">
+        <span>Você não compra um fone.</span>
+        <span>Você escolhe como quer ouvir o mundo.</span>
+      </h2>
+      <div class="final-cta__specs reveal">
+        <span class="spec-pill">30h bateria</span>
+        <span class="spec-pill">ANC 2x</span>
+        <span class="spec-pill">Áudio Espacial</span>
+        <span class="spec-pill">IP54</span>
+      </div>
+      <p class="final-cta__guarantee reveal">14 dias para devolver. Sem perguntas. Sem burocracia.</p>
+      <a href="#" class="btn btn--primary btn--large reveal">Quero Meu AirPods Pro</a>
+      <p class="final-cta__microcopy reveal">Frete grátis · Entrega em até 3 dias úteis</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__links">
+        <a href="#">Termos de Serviço</a>
+        <span class="footer__divider">·</span>
+        <a href="#">Política de Privacidade</a>
+      </div>
+      <p class="footer__copyright">© 2025 AirPods Pro. Página demonstrativa.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
